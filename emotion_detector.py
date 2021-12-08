@@ -18,7 +18,7 @@ emotion_label_to_text = {
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 mtcnn = MTCNN(keep_all=True, device=device)
-model = keras.models.load_model("emotion.h5")
+model = keras.models.load_model("model.h5")
 print("Model loaded successfully")
 
 
